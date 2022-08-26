@@ -8,6 +8,7 @@
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
+            width: 100%;
             background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
         }
         .box{
@@ -19,7 +20,17 @@
             background-color: rgba(0, 0, 0, 0.6);
             padding: 15px;
             border-radius: 15px;
-            width: 20%;
+            min-width: 300px;
+            max-width: 1000px;
+        }
+        main {
+            min-width: 100px;
+            max-width: 1000px;
+            margin: auto;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
         }
         fieldset{
             border: 3px solid dodgerblue;
@@ -80,7 +91,7 @@
     </style>
 </head>
 <body>
-    <div class="box">
+    <main><div class="box">
         <form action="">
             <fieldset>
                 <legend><b>Fórmulário de Clientes</b></legend>
@@ -131,5 +142,6 @@
             </fieldset>
         </form>
     </div>
+    </main>
 </body>
 </html>
